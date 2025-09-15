@@ -16,4 +16,42 @@ A GenAI powered tool that generates optimized Dockerfiles based on programming l
        ollama pull llama3.2:1b
 
 📝 Example Usage
-    
+    PS D:\DevOps\devops-with-genai\llm-projects\local-llms-ollama\dockerfile-generator> py .\generate_dockerfile.py
+         Enter the programming language: groovy
+         Generated Dockerfile:
+         <think>
+            Alright, so I'm trying to create a Dockerfile for Groovy. Let me think about how to approach this step by step.
+
+Result
+   Here’s an ideal Dockerfile for Groovy, incorporating best practices and clear steps:
+
+   ```dockerfile
+   # Dockerfile for Groovy
+
+   # Base Python version
+   FROM py3
+
+   # Install dependencies
+   RUN pip3 install -r requirements.txt
+
+   # Build system configurations
+   ALpine
+   poetry --install poetry linter typescript
+   poetry --system-set --build TypeScript-exc "typescript-exc/lyndon"
+   poetry --system-set build build --project g
+
+   # Create working directory
+   mkdir -p app
+
+   # Install development tools
+   RUN pip3 install -r requirements.txt
+
+
+   # Add Groovy CLI tool (for Windows)
+   RUN g install --path "C:\Program Files" --build 1
+   RUN g install --path "C:\Program Files" --build 1
+
+
+   # Set up the container with the application
+   RUN g-run --app root --web /app/app.html
+   RUN g-run --app root --web /app/app.html   
